@@ -24,6 +24,18 @@ $(document).ready(function(){
     $("numberLosses").text(losses);
 
     // Create a reset for the game
+    function reset(){
+      random = Math.floor(Math.random()*101+19);
+      console.log(random)
+      $("#randomNumber").text(random)
+      var Blue = Math.floor(Math.random()*11+1);
+      var Red = Math.floor(Math.random()*11+1);
+      var Yellow = Math.floor(Math.random()*11+1);
+      var Green = Math.floor(Math.random()*11+1);
+      console.log(Blue, Red, Yellow, Green);
+      userTotal = 0;
+      $("#finalTotal").text(userTotal)
+    }
 
 
     // Add wins to the wins
