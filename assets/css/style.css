@@ -1,0 +1,23 @@
+body {
+    background-image: url("../images/morocco-blue.png");
+}
+
+div {
+    background-color: white;
+    margin: 10px;
+    width:30%;
+    border: solid 2px red;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 10pt;
+    text-align: center;
+    font-weight: bold;
+}
