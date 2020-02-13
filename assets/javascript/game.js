@@ -39,10 +39,20 @@ $(document).ready(function(){
 
 
     // Add wins to the wins
-
+    function win (){
+      wins ++;
+      $("#numberWins").text(wins);
+      alert ("You WON!");
+      reset();
+    }
 
     // Add losses to the losses
-
+    function lose (){
+      wins ++;
+      $("#numberLosses").text(losses);
+      alert ("You LOST!");
+      reset();
+    }
 
     // Setup click for jewels
 
