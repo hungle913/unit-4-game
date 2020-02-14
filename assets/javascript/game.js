@@ -5,7 +5,7 @@ $(document).ready(function(){
     console.log(random);
 
     // Append random number to the randomNumber id on html
-    $("#randomNumber").text(random)
+    $("#randomNumber").text("Winning Number is: " + random)
 
     // Setup random numbers for each gem. Numbers should be between 1 - 12
     var Blue = Math.floor(Math.random()*11+1);
@@ -26,7 +26,7 @@ $(document).ready(function(){
     function reset(){
       random = Math.floor(Math.random()*101+19);
       console.log(random)
-      $("#randomNumber").text(random)
+      $("#randomNumber").text("Winning Number is: " + random)
       var Blue = Math.floor(Math.random()*11+1);
       var Red = Math.floor(Math.random()*11+1);
       var Yellow = Math.floor(Math.random()*11+1);
