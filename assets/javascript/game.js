@@ -12,7 +12,6 @@ $(document).ready(function(){
     var Red = Math.floor(Math.random()*11+1);
     var Yellow = Math.floor(Math.random()*11+1);
     var Green = Math.floor(Math.random()*11+1);
-    console.log(Blue, Red, Yellow, Green);
 
     // Set variable to tally wins, losses, user totals
     var wins = 0;
@@ -32,7 +31,6 @@ $(document).ready(function(){
       var Red = Math.floor(Math.random()*11+1);
       var Yellow = Math.floor(Math.random()*11+1);
       var Green = Math.floor(Math.random()*11+1);
-      console.log(Blue, Red, Yellow, Green);
       userTotal = 0;
       $("#finalTotal").text(userTotal)
     }
@@ -48,19 +46,63 @@ $(document).ready(function(){
 
     // Add losses to the losses
     function lose (){
-      wins ++;
+      losses++;
       $("#numberLosses").text(losses);
       alert ("You LOST!");
       reset();
     }
 
     // Setup click for jewels
+    $('#Blue').on ("click", function(){
+      userTotal = userTotal + Blue;
+      console.log("New userTotal= " + userTotal);
+      $('#finalTotal').text(userTotal); 
+            //sets win/lose conditions
+          if (userTotal === random){
+            win();
+          }
+          else if ( userTotal > random){
+            lose();
+          }   
+    })  
 
+    $("#Red").on ("click", function(){
+      userTotal = userTotal + Red;
+      console.log("New userTotal= " + userTotal);
+      $("#finalTotal").text(userTotal); 
+            //sets win/lose conditions
+          if (userTotal === random){
+            win();
+          }
+          else if ( userTotal > random){
+            lose();
+          }   
+    })  
 
-    // Setup wins/lose conditions
+    $("#Yellow").on ("click", function(){
+      userTotal = userTotal + Yellow;
+      console.log("New userTotal= " + userTotal);
+      $("#finalTotal").text(userTotal); 
+            //sets win/lose conditions
+          if (userTotal === random){
+            win();
+          }
+          else if ( userTotal > random){
+            lose();
+          }   
+    })  
 
-
-
-
+    $('#Green').on ("click", function(){
+      userTotal = userTotal + Green;
+      console.log("New userTotal= " + userTotal);
+      $("#finalTotal").text(userTotal); 
+            //sets win/lose conditions
+          if (userTotal === random){
+            win();
+          }
+          else if ( userTotal > random){
+            lose();
+          }   
+    })  
   
   });
