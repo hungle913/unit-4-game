@@ -2,21 +2,19 @@ body {
     background-image: url("../images/morocco-blue.png");
 }
 
-div {
-    background-color: white;
-    margin: 10px;
-    width:30%;
-    border: solid 2px red;
-    padding: 10px;
-}
-
 h1 {
     font-size: 30pt;
     text-align: center;
     font-weight: bold;
 }
 
-h2 {
+h3 {
+    font-size: 17pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.score {
     font-size: 15pt;
     text-align: center;
     font-weight: bold;
@@ -24,39 +22,64 @@ h2 {
 
 .header {
     width: 50%;
+    background-color: white;
+    margin: auto;
+    border: solid 2px red;
+    padding: 10px;
 }
 
 .instructions {
     width: 50%;
+    background-color: white;
+    margin: auto;
+    border: solid 2px red;
+    padding: 10px;
+    font-weight: bold;
 }
+
+/* .score {
+    clear: both;
+    background-color: white;
+    margin: auto;
+    width:20%;
+    border: solid 2px red;
+    padding: 10px;
+} */
 
 #computerNumber {
-    float: left;
-    width: 15%;
+    background-color: white;
+    border: solid 2px red;
     height: 60px;
 }
 
-.winsAndLosses {
-    float: left;
-    width: 15%;
+#winsAndLosses {
+    background-color: white;
+    border: solid 2px red;
     height: 60px;
-    margin-top: -5px;
-    margin-bottom: 30px;
-
-}
-
-.crystals {
-    clear: both;
-
 }
 
 .userTotal {
     width: 30%;
     height: 60px;
     font-size: 25px;
+    background-color: white;
+    margin: auto;
+    border: solid 2px red;
+    padding: 10px;
+    color: green;
 }
 
 #randomNumber {
     font-weight: bold;
     font-size: 25px;
+    color: blue;
+    padding: 10px;
+}
+
+#Green {
+    float: right;
+}
+
+#Yellow {
+    float: right;
 }

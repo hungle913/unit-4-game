@@ -4,6 +4,7 @@
     
     <title> Crystal Collector </title>
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../unit-4-game/assets/css/style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -35,29 +36,37 @@
 
     <br>
 
-    <div id="computerNumber">
-        <h2 id="randomNumber">Winning Number is: </h2>
-
-    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div id="computerNumber">
+                    <h3 id="randomNumber">Winning Number is: </h3>
+                </div>
+            </div>    
+            <div class="col-md-4" id="win-loss">
+                <div id="winsAndLosses">
+                    <h3>Wins: <span id="numberWins"></span>
+                        <br>
+                        Losses: <span id="numberLosses"></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>    
 
     <br>
 
-    <div class="winsAndLosses">
-        <h2>Wins:
-            <span id="numberWins"></span>
-            <br>
-            Losses:
-            <span id="numberLosses"></span>
-        </h2>
-    </div>
-
-    <br>
-
-    <div class="crystals">
-        <img src="../unit-4-game/assets/images/Blue_Crystal.jpg" id="Blue" alt="Blue Crystal">
-        <img src="../unit-4-game/assets/images/Red_Crystal.jpg" id="Red" alt="Red Crystal">
-        <img src="../unit-4-game/assets/images/Yellow_Crystal.jpg" id="Yellow" alt="Yellow Crystal">
-		<img src="../unit-4-game/assets/images/Green_Crystal.jpg" id="Green" alt="Green Crystal">
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><img src="../unit-4-game/assets/images/Blue_Crystal.jpg" class="crystal" id="Blue" alt="Blue Crystal"></div>
+            <div class="col"><img src="../unit-4-game/assets/images/Red_Crystal.jpg" class="crystal" id="Red" alt="Red Crystal"></div>
+            <div class="col"><img src="../unit-4-game/assets/images/Yellow_Crystal.jpg" class="crystal" id="Yellow" alt="Yellow Crystal"></div>
+            <div class="col"><img src="../unit-4-game/assets/images/Green_Crystal.jpg" class="crystal" id="Green" alt="Green Crystal"></div>
+            <div class="col"></div>
+        </div>
     </div>
     
     <br>
