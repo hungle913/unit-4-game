@@ -37,15 +37,6 @@ h3 {
     font-weight: bold;
 }
 
-/* .score {
-    clear: both;
-    background-color: white;
-    margin: auto;
-    width:20%;
-    border: solid 2px red;
-    padding: 10px;
-} */
-
 #computerNumber {
     background-color: white;
     border: solid 2px red;
@@ -59,7 +50,7 @@ h3 {
 }
 
 .userTotal {
-    width: 30%;
+    width: 350px;
     height: 60px;
     font-size: 25px;
     background-color: white;
